@@ -1,0 +1,46 @@
+{
+    "name": "sven/dasconsent",
+    "description": "DAS Consent",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "WebdesignHamburg.net"
+        }
+    ],
+    "require": {
+         "shopware/core": "6.6.*", 
+    "shopware/administration": "6.6.*", 
+    "shopware/storefront": "6.6.*" 
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^7.1"
+    },
+    "extra": {
+        "shopware-plugin-class": "Sven\\DasConsent\\SvenDasConsent",
+        "copyright": "(c) by WebdesignHamburg.net",
+        "label": {
+            "de-DE": "DAS Consent - einfach das Consent Banner mittig präsentieren",
+            "en-GB": "DAS Consent - simply change the way that shopware consent manager is shown"
+        },
+        "description": {
+            "de-DE": "Das Plugin erzeute eine Cookie Wall, so dass der Besucher gezwungen ist, erst den Cookie zuzustimmen oder abzulehnen.",
+            "en-GB": "The plugin generates a cookie wall so that the visitor is forced to accept or reject the cookie first."
+        },
+        "manufacturerLink": {
+            "en-GB": "https://webdesignhamburg.net",
+            "de-DE": "https://webdesignhamburg.net"
+        },
+        "supportLink": {
+            "de-DE": "https://webdesignhamburg.net",
+            "en-GB": "https://webdesignhamburg.net"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Sven\\DasConsent\\": "src/"
+        }
+    }
+}

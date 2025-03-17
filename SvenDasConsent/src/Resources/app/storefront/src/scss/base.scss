@@ -1,0 +1,67 @@
+.cookie-wrapper .cookie-permission-container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-width: 90%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-width:70%;
+}
+
+.cookie-wrapper .cookie-permission-container .cookie-permission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cookie-wrapper .cookie-permission-container .cookie-permission-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cookie-wrapper .cookie-permission-container .cookie-permission-buttons button {
+    padding: 10px 15px;
+}
+
+.cookie-overlay-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 9998; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+/* When the class "visible" is added, it will fade in */
+.cookie-overlay-on.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+}
+
+
+.cookie-wrapper {
+    z-index: 10;
+}
+
+.cookie-permission-container[style*="display: none"] ~ .cookie-overlay {
+    display: none !important;
+}
+
+div.cookie-overlay-on.d-none {
+    display: none !important;
+}

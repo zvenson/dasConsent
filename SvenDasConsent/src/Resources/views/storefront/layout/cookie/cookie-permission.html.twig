@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/cookie/cookie-permission.html.twig' %}
+
+{% block layout_cookie_permission_inner %}
+    {% if dasConsent %}
+        <div class="cookie-overlay{% if cookieWall %}-on{% endif %} {% if app.request.cookies.get('cookie-preference') %}d-none{% endif %}">
+            <div class="cookie-wrapper">
+                {{ parent() }}
+            </div>
+        </div>
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

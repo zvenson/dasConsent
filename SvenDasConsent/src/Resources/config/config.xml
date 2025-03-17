@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+	<card>
+		<title>Basic Configuration</title>
+		<title lang="de-DE">Grundeinstellungen</title>
+		<input-field type="bool">
+			<name>show</name>
+			<label lang="de-DE">Das Consent einschalten</label>
+			<label>Switch on Das Consent</label>
+			<defaultValue>1</defaultValue>
+		</input-field>
+		<input-field type="bool">
+			<name>cookieWall</name>
+			<label lang="de-DE">Cookie Wall einschalten</label>
+			<label>activate Cookie Wall</label>
+			<defaultValue>1</defaultValue>
+			<helpText lang="de-DE">Only works if the Consent Tool is switched on.</helpText>
+			<helpText> </helpText>
+		</input-field>
+		
+	</card>
+</config>
